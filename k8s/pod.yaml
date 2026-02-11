@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod 
+metadata:
+  name: devops-app-pod
+  labels:
+    app: devops-app
+spec:
+  containers:
+    - name: devops-app
+      image: project_test2:latest
+      imagePullPolicy: Never
+      ports:
+        - containerPort: 8000
+
